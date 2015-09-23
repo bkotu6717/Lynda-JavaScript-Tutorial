@@ -1,0 +1,1 @@
+alert('This is sample text for showing javascript alert statement from external file!!');
