@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Object Methods</title>
+</head>
+<body>
+	<p id="demo"> Click button to see your full name here!! </p>
+	<button type="button" onclick="seeName()">Click!!</button>
+	<script type="text/javascript">
+		function seeName () {
+			var person = {firstName: "Bhaskar", lastName: "Rao",
+	               			fullName: function(){
+	               						return this.firstName + this.lastName;
+	               						}
+	           			};
+		document.getElementById('demo').innerHTML = person.fullName();
+		}
+		
+	</script>
+</body>
+</html>

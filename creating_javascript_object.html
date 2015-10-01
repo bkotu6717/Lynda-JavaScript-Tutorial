@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating JavaScript Object</title>
+</head>
+<body>
+<p id="demo"> This is some text!! </p>
+<button type="button" onclick="getCarName()">Get Car Name</button>
+<script type="text/javascript">
+	function getCarName (argument) {
+		var x = 1;
+		var car = {name: "Fiat", type: "4 Seater", model: "101"}
+		document.getElementById('demo').innerHTML = car.name;
+	}
+</script>
+</body>
+</html>

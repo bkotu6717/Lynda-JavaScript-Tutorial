@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript inside body</title>
+	</head>
+	<body>
+		<p id="demo"> Some text here</p>
+		<button type="button" onclick="changeText()">Click to change Text</button>
+
+		<script type="text/javascript">
+		function changeText () {
+			document.getElementById('demo').innerHTML = "This text is replaced by javascript!!";
+		}
+		</script>
+	</body>
+</html>
