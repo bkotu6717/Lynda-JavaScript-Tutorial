@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change style of HTML element</title>
+</head>
+<body>
+	<h1> What JavaScript Can do?</h1>
+	<p id="demo"> I am text for paragraph tag </p>
+	<button type="button" onclick="changeStyle()">Cickt to Change paragraph</button>
+	
+	<script type="text/javascript">
+	function changeStyle () {
+		var ptag = document.getElementById('demo');
+		ptag.style.fontSize = "25px";
+		ptag.style.color = "red";
+		// body...
+	}
+	</script>
+</body>
+</html>

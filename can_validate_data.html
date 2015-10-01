@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Can validate data!!</title>
+</head>
+<body>
+	<h1> JavaScript Can validate input fields!!</h1>
+	<input id="numb" type="number">
+	<p id="demo"></p>
+
+	<button type="button" onclick="validateInput()">Submit</button>
+	<script type="text/javascript">
+		function validateInput () {
+			var x = document.getElementById('numb').value;
+			var text = '';
+			if (isNaN(x) || x < 1 || x > 10){
+				text = "Invalid Input!!";
+			}else{
+				text = "Input OK!!"
+			}		
+			document.getElementById('demo').innerHTML = text;
+		}
+	</script>
+
+</body>
+</html>
